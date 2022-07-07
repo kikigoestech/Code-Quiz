@@ -46,4 +46,18 @@ a:hover {
     color: grey;
 }
 
+button {
+    display: inline-block;
+    margin: 5px;
+    cursor: pointer;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 100%;
+    background-color: purple;
+    border-radius: 5px;
+    padding: 2px 10px;
+    color: white;
+    border: 0;
+    transition: background-color 0.1s ;
+}
+
 
