@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Coding Quiz</title>
-    <link rel="stylesheet" href="style.css"/>
-</head>
 
-<body>
-    <div class="scores"><a href="scores.html">View Highscores</a></div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-    <div class="timer">Time: <span id="Time">0</span></div>
+  <body>
+    <div class="scores"><a href="./scores.html">View Highscores</a></div>
+
+    <div class="timer">Time: <span id="time">0</span></div>
 
     <div class="wrapper">
-        <div id="start-screen" class="start">
-            <h1>Coding Quiz Challenge</h1>
-            <p>
-                Lets see what you know! Here are some code related questions. Answer them all as quickly as you can and try to get the HIGH SCORE, but note that the incorrect answer will result in a 10 second score/time penalty. Dont worry, you can try as many tines as you want!
-            </p>
-            <button id="start">Start Quiz</button>
-    </div>
+      <div id="start-screen" class="start-quiz">
+        <h1>Coding Quiz Challenge</h1>
+        <p>
+          Let's see what you know! Here are some code-related questions. Answer them all as quickly as you can and try to get the HIGH SCORE, but note that incorrect answers will result in a 10 second score/time penalty. Don't worry, you can try as many times as you want!
+        </p>
 
-    <div id="questions" class="hide">
+<!-- Start Quiz button-->
+<div class="navigate">
+    <button id="start-btn" class="start-btn btn">Start Quiz</button>
+</div>
+
+
+
+      <div id="questions" class="hide">
         <h2 id="question-title"></h2>
         <div id="choices" class="choices"></div>
-    </div>
+      </div>
 
-    <div id="end-screen" class="hide">
+      <div id="end-screen" class="hide">
         <h2>All done!</h2>
         <p>Your final score is <span id="final-score"></span>.</p>
         <p>
-            Enter initials: <input type="text" id="initials" max="3" />
-            <button id="submit">Submit</button>
+          Enter initials: <input type="text" id="initials" max="3" />
+          <button id="submit">Submit</button>
         </p>
-    </div>
+      </div>
 
-    <div id="Feedback" class="feedback hide"></div>
+      <div id="feedback" class="feedback hide"></div>
     </div>
-
-    <script src="./JS/questions.js"></script>
-    <script src="./JS/script.js"></script>
 
     
-</body>
+    <script src="./JS/script.js"></script>
+  </body>
 </html>
