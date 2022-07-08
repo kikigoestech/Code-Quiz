@@ -12,6 +12,8 @@ A web app that allows students to take a quiz on JavaScript fundamentals that st
 
 ## Website
 
+https://kikigoestech.github.io/Code-Quiz/
+
 
 
 ## Contribution
